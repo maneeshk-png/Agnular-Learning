@@ -1,0 +1,23 @@
+<h2>UI State Handling</h2>
+
+<button (click)="loadData()" [disabled]="isLoading">
+  Load Data
+</button>
+
+<!-- Loading -->
+<p *ngIf="isLoading">Loading...</p>
+
+<!-- Error -->
+<p *ngIf="error" class="error">
+  {{ error }}
+</p>
+
+<!-- Success -->
+<pre *ngIf="data">
+{{ data | json }}
+</pre>
+
+ <br> 
+ <br>
+ <br>
+<a routerLink="/">⬅ Back to Home</a>
