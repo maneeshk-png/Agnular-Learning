@@ -1,0 +1,44 @@
+<h2>Directives Example</h2>
+
+<!-- 1️⃣ ngIf -->
+<button (click)="showMessage = !showMessage">
+  Toggle Message
+</button>
+
+<p *ngIf="showMessage">
+  This text is controlled by *ngIf
+</p>
+
+<hr />
+
+<!-- 2️⃣ ngFor -->
+<h3>Skills List</h3>
+<ul>
+  <li *ngFor="let skill of skills">
+    {{ skill }}
+  </li>
+</ul>
+
+<hr />
+
+<!-- 3️⃣ ngClass -->
+<p [ngClass]="{ active: isActive, inactive: !isActive }">
+  ngClass applied here
+</p>
+
+<button (click)="isActive = !isActive">
+  Toggle Class
+</button>
+
+<hr />
+
+<!-- 4️⃣ ngStyle -->
+<p [ngStyle]="{
+  color: isActive ? 'green' : 'red',
+  fontWeight: isActive ? 'bold' : 'normal'
+}">
+  ngStyle applied here
+</p>
+
+
+<a routerLink="/">⬅ Back to Home</a>
