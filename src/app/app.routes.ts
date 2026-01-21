@@ -7,6 +7,9 @@ import { ObservableComponent } from './concepts/observable-concept/observable.co
 import { RxjsComponent } from './concepts/rxjs-concept/rxjs.component';
 import { TemplateFormComponent } from './concepts/template-form-concept/template-form.component';
 import { ReactiveFormComponent } from './concepts/reactive-form-concept/reactive-form.component';
+import { LoginComponent } from './concepts/guards-concept/pages/login/login.component';
+import { DashboardComponent } from './concepts/guards-concept/pages/dashboard/dashboard.component';
+import { AuthGuard } from './concepts/guards-concept/gaurd/auth.guard';
 
 
 export const routes: Routes = [
@@ -17,5 +20,11 @@ export const routes: Routes = [
     {path:'observable',component:ObservableComponent},
     {path:'rxjs' ,component:RxjsComponent},
     {path:'forms',component:TemplateFormComponent},
-    {path:'reactive-forms',component:ReactiveFormComponent}
+    {path:'reactive-forms',component:ReactiveFormComponent},
+    {path:'guard' ,component:LoginComponent},
+    {path:'guards/login',component:LoginComponent},
+    {path: 'guards/dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
+    }
 ];
