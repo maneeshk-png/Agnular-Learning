@@ -1,0 +1,22 @@
+<h2>Observable Demo</h2>
+
+<button (click)="startObservable()">Start Observable</button>
+
+<ul>
+  <li *ngFor="let num of numbers">{{ num }}</li>
+</ul>
+
+
+<!-- What happens step-by-step (CRUCIAL)
+
+Button clicked
+
+Observable created
+
+.subscribe() called
+
+observer.next() emits values
+
+UI updates automatically
+
+complete() stops stream -->
