@@ -1,0 +1,67 @@
+<h2>Angular Concepts</h2>
+
+<ul>
+
+  <!-- Core Basics -->
+  <li>
+    <button (click)="showCore = !showCore">
+      Core Basics
+    </button>
+
+    <ul *ngIf="showCore">
+      <li><a routerLink="/data-binding">Data Binding</a></li>
+      <li><a routerLink="/directives">Directives</a></li>
+      <li><a routerLink="/component-communication">Component Communication</a></li>
+    </ul>
+  </li>
+
+  <!-- Reactive -->
+  <li>
+    <button (click)="showReactive = !showReactive">
+      Reactive
+    </button>
+
+    <ul *ngIf="showReactive">
+      <li><a routerLink="/observable">Observable</a></li>
+      <li><a routerLink="/rxjs">RxJS</a></li>
+    </ul>
+  </li>
+
+  <!-- Forms -->
+  <li>
+    <button (click)="showForms = !showForms">
+      Forms
+    </button>
+
+    <ul *ngIf="showForms">
+      <li><a routerLink="/forms">Template Forms</a></li>
+      <li><a routerLink="/reactive-forms">Reactive Forms</a></li>
+    </ul>
+  </li>
+
+  <!-- App Behavior -->
+  <li>
+    <button (click)="showApp = !showApp">
+      App Behavior
+    </button>
+
+    <ul *ngIf="showApp">
+      <li><a routerLink="/routing">Routing</a></li>
+      <li><a routerLink="/guard">Guards</a></li>
+      <li><a routerLink="/interceptor">HTTP Interceptor</a></li>
+    </ul>
+  </li>
+
+  <!-- UI & Error -->
+  <li>
+    <button (click)="showUi = !showUi">
+      UI & Error
+    </button>
+
+    <ul *ngIf="showUi">
+      <li><a routerLink="/ui-state">UI State Handling</a></li>
+      <li><a routerLink="/error-handling">Error Handling</a></li>
+    </ul>
+  </li>
+
+</ul>

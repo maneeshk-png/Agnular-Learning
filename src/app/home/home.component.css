@@ -1,0 +1,54 @@
+/* Container */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+  
+  /* Remove default list styling */
+  li {
+    margin: 0;
+  }
+  
+  /* Card */
+  a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+  
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+  
+    transition: all 0.2s ease;
+  }
+  
+  /* Hover effect */
+  a:hover {
+    background-color: #f0f4ff;
+    border-color: #4a6cf7;
+    color: #4a6cf7;
+    transform: translateY(-2px);
+  }
+  
+  button{
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    background-color: black;
+    font-size: 1.3rem;
+    border: 3px solid red;
+  }
+
+  button:hover{
+    background-color: white;
+    color: black;
+  }
