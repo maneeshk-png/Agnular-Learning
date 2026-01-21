@@ -10,6 +10,8 @@ import { ReactiveFormComponent } from './concepts/reactive-form-concept/reactive
 import { LoginComponent } from './concepts/guards-concept/pages/login/login.component';
 import { DashboardComponent } from './concepts/guards-concept/pages/dashboard/dashboard.component';
 import { AuthGuard } from './concepts/guards-concept/gaurd/auth.guard';
+//import { ApiTestComponent } from './concepts/interceptor-concept/pages/api-test/api-test.component';
+import { UiStateComponent } from './concepts/ui-state-concept/pages/ui-state.component';
 
 
 export const routes: Routes = [
@@ -26,5 +28,10 @@ export const routes: Routes = [
     {path: 'guards/dashboard',
     component: DashboardComponent,
     canActivate: [AuthGuard]
+    },
+    {
+        path:'ui-state',
+        component:UiStateComponent
     }
+
 ];
