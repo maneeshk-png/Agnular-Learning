@@ -6,6 +6,7 @@ import { ParentComponent } from './concepts/component-communication-concept/pare
 import { ObservableComponent } from './concepts/observable-concept/observable.component';
 import { RxjsComponent } from './concepts/rxjs-concept/rxjs.component';
 import { TemplateFormComponent } from './concepts/template-form-concept/template-form.component';
+import { ReactiveFormComponent } from './concepts/reactive-form-concept/reactive-form.component';
 
 
 export const routes: Routes = [
@@ -15,5 +16,6 @@ export const routes: Routes = [
     {path:'component-communication',component:ParentComponent},
     {path:'observable',component:ObservableComponent},
     {path:'rxjs' ,component:RxjsComponent},
-    {path:'forms',component:TemplateFormComponent}
+    {path:'forms',component:TemplateFormComponent},
+    {path:'reactive-forms',component:ReactiveFormComponent}
 ];
