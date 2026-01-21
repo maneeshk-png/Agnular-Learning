@@ -5,6 +5,7 @@ import { DirectivesComponent } from './concepts/directive-concept/directive.comp
 import { ParentComponent } from './concepts/component-communication-concept/parent/parent.component';
 import { ObservableComponent } from './concepts/observable-concept/observable.component';
 import { RxjsComponent } from './concepts/rxjs-concept/rxjs.component';
+import { TemplateFormComponent } from './concepts/template-form-concept/template-form.component';
 
 
 export const routes: Routes = [
@@ -13,5 +14,6 @@ export const routes: Routes = [
     {path:'directives', component:DirectivesComponent},
     {path:'component-communication',component:ParentComponent},
     {path:'observable',component:ObservableComponent},
-    {path:'rxjs' ,component:RxjsComponent}
+    {path:'rxjs' ,component:RxjsComponent},
+    {path:'forms',component:TemplateFormComponent}
 ];
