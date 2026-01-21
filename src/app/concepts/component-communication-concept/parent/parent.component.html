@@ -1,0 +1,13 @@
+<div class="parent-box">
+    <h2>Parent Component</h2>
+  
+    <app-child
+      [messageFromParent]="parentMessage"
+      (sendToParent)="receiveFromChild($event)">
+    </app-child>
+  
+    <p *ngIf="childResponse">
+      <strong>Message from Child:</strong> {{ childResponse }}
+    </p>
+  </div>
+  
