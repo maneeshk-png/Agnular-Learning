@@ -1,5 +1,9 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { DataBidingConcept } from './concepts/data-biding-concept/data-biding-concept';
 
 
-export const routes: Routes = [{ path: '', component: HomeComponent }];
+export const routes: Routes = [
+    { path: '', component: HomeComponent },
+    {path: 'data-binding',component:DataBidingConcept}
+];

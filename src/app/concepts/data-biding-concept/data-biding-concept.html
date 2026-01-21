@@ -1,0 +1,25 @@
+<h2>Data Binding Demo</h2>
+
+<!-- Interpolation -->
+<p>Hello, {{ username }}</p>
+
+<!-- Property Binding -->
+<input
+  [value]="username"
+  [disabled]="isDisabled"
+/>
+
+<!-- Event Binding -->
+<button (click)="isDisabled = !isDisabled">
+  Toggle Disable Input
+</button>
+
+<!-- Two-way Binding -->
+<input
+  [(ngModel)]="username"
+  placeholder="Type your name"
+/>
+
+<p>Live Preview: {{ username }}</p>
+
+<a routerLink="/">⬅ Back to Home</a>
