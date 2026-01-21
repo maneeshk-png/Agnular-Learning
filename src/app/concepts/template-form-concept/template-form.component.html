@@ -1,0 +1,35 @@
+<h2>Template Driven Form</h2>
+
+<form #f="ngForm" (ngSubmit)="submitForm(f)">
+
+  <label>
+    Name:
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="user.name"
+      required>
+  </label>
+
+  <br><br>
+
+  <label>
+    Email:
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="user.email"
+      required>
+  </label>
+
+  <br><br>
+
+  <button type="submit" [disabled]="f.invalid">
+    Submit
+  </button>
+
+</form>
+
+<p *ngIf="f.valid">
+  ✔ Form is valid
+</p>
